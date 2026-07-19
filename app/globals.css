@@ -1,4 +1,85 @@
 @import "tailwindcss";
+@theme {
+   /* Red Scale (Destructive / Errors) */
+  --color-red-50: #fef2f2;
+  --color-red-100: #fee2e2;
+  --color-red-200: #fecaca;
+  --color-red-300: #fca5a5;
+  --color-red-400: #f87171;
+  --color-red-500: #ef4444;
+  --color-red-600: #dc2626;
+  --color-red-700: #b91c1c;
+  --color-red-800: #991b1b;
+  --color-red-900: #7f1d1d;
+  --color-red-950: #450a0a;
+
+  /* Orange Scale (Secondary Accents / Highlights) */
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-200: #fed7aa;
+  --color-orange-300: #fdba74;
+  --color-orange-400: #fb923c;
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-orange-700: #c2410c;
+  --color-orange-800: #9a3412;
+  --color-orange-900: #7c2d12;
+  --color-orange-950: #431407;
+
+  /* Amber Scale (Warnings / Pending States) */
+  --color-amber-50: #fffbeb;
+  --color-amber-100: #fef3c7;
+  --color-amber-200: #fde68a;
+  --color-amber-300: #fcd34d;
+  --color-amber-400: #fbbf24;
+  --color-amber-500: #f59e0b;
+  --color-amber-600: #d97706;
+  --color-amber-700: #b45309;
+  --color-amber-800: #92400e;
+  --color-amber-900: #78350f;
+  --color-amber-950: #451a03;
+
+  /* Yellow Scale (Attention / Notifications) */
+  --color-yellow-50: #fefce8;
+  --color-yellow-100: #fef9c3;
+  --color-yellow-200: #fef08a;
+  --color-yellow-300: #fde047;
+  --color-yellow-400: #facc15;
+  --color-yellow-500: #eab308;
+  --color-yellow-600: #ca8a04;
+  --color-yellow-700: #a16207;
+  --color-yellow-800: #854d0e;
+  --color-yellow-900: #713f12;
+  --color-yellow-950: #422006;
+
+  /* Lime Scale (Creative Accents / Stock States) */
+  --color-lime-50: #f7fee7;
+  --color-lime-100: #ecfccb;
+  --color-lime-200: #d9f99d;
+  --color-lime-300: #bef264;
+  --color-lime-400: #a3e635;
+  --color-lime-500: #84cc16;
+  --color-lime-600: #65a30d;
+  --color-lime-700: #4d7c0f;
+  --color-lime-800: #3f6212;
+  --color-lime-900: #365314;
+  --color-lime-950: #1a2e05;
+
+  /* Green Scale (Success / Completed / Revenue) */
+  --color-green-50: #f0fdf4;
+  --color-green-100: #dcfce7;
+  --color-green-200: #bbf7d0;
+  --color-green-300: #86efac;
+  --color-green-400: #4ade80;
+  --color-green-500: #22c55e;
+  --color-green-600: #16a34a;
+  --color-green-700: #15803d;
+  --color-green-800: #166534;
+  --color-green-900: #14532d;
+  --color-green-950: #052e16;
+
+  --color-white-950: #ffffff;
+}
 
 
 
@@ -8,6 +89,91 @@
 
 
 
+.dark {
+  /* Red Scale (Inverted for Dark Mode) */
+  --red-50: #450a0a;
+  --red-100: #7f1d1d;
+  --red-200: #991b1b;
+  --red-300: #b91c1c;
+  --red-400: #dc2626;
+  --red-500: #ef4444;
+  --red-600: #f87171;
+  --red-700: #fca5a5;
+  --red-800: #fecaca;
+  --red-900: #fee2e2;
+  --red-950: #fef2f2;
+
+  /* Orange Scale (Inverted for Dark Mode) */
+  --orange-50: #431407;
+  --orange-100: #7c2d12;
+  --orange-200: #9a3412;
+  --orange-300: #c2410c;
+  --orange-400: #ea580c;
+  --orange-500: #f97316;
+  --orange-600: #fb923c;
+  --orange-700: #fdba74;
+  --orange-800: #fed7aa;
+  --orange-900: #ffedd5;
+  --orange-950: #fff7ed;
+
+  /* Amber Scale (Inverted for Dark Mode) */
+  --amber-50: #451a03;
+  --amber-100: #78350f;
+  --amber-200: #92400e;
+  --amber-300: #b45309;
+  --amber-400: #d97706;
+  --amber-500: #f59e0b;
+  --amber-600: #fbbf24;
+  --amber-700: #fcd34d;
+  --amber-800: #fde68a;
+  --amber-900: #fef3c7;
+  --amber-950: #fffbeb;
+
+  /* Yellow Scale (Inverted for Dark Mode) */
+  --yellow-50: #422006;
+  --yellow-100: #713f12;
+  --yellow-200: #854d0e;
+  --yellow-300: #a16207;
+  --yellow-400: #ca8a04;
+  --yellow-500: #eab308;
+  --yellow-600: #facc15;
+  --yellow-700: #fde047;
+  --yellow-800: #fef08a;
+  --yellow-900: #fef9c3;
+  --yellow-950: #fefce8;
+
+  /* Lime Scale (Inverted for Dark Mode) */
+  --lime-50: #1a2e05;
+  --lime-100: #365314;
+  --lime-200: #3f6212;
+  --lime-300: #4d7c0f;
+  --lime-400: #65a30d;
+  --lime-500: #84cc16;
+  --lime-600: #a3e635;
+  --lime-700: #bef264;
+  --lime-800: #d9f99d;
+  --lime-900: #ecfccb;
+  --lime-950: #f7fee7;
+
+  /* Green Scale (Inverted for Dark Mode) */
+  --green-50: #052e16;
+  --green-100: #14532d;
+  --green-200: #166534;
+  --green-300: #15803d;
+  --green-400: #16a34a;
+  --green-500: #22c55e;
+  --green-600: #4ade80;
+  --green-700: #86efac;
+  --green-800: #bbf7d0;
+  --green-900: #dcfce7;
+  --green-950: #f0fdf4;
+}
+
+
+
+
+
+/* 
 :root {
   --font-size: 16px;
   --background: #ffffff;
@@ -84,8 +250,9 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
-}
-
+} */
+  
+/* 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -125,7 +292,7 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-}
+} */
 
 
  
@@ -144,6 +311,7 @@
 
 body {
   background: var(--background);
+  background: var(--color-white-950);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
