@@ -1,12 +1,16 @@
 import React from "react";
+import { LoaderCircle } from 'lucide-react';
+import {Loader} from '@/app/src/components/ui'
 
 type BtnProps = {
   children: React.ReactNode;
   variant?: "primary" | "secondary" | "tertiary" | "ghost" | "danger";
   size?: "sm" | "md" | "lg";
   disabled?: boolean;
+  isLoading?: boolean;
   iconOnly?: boolean;
   onClick?: () => void;
+  className?: any;
 };
 
 const Button = ({
@@ -14,8 +18,10 @@ const Button = ({
   variant = "primary",
   size = "md",
   disabled = false,
+  isLoading = false,
   iconOnly = false,
   onClick,
+  className
 }: BtnProps) => {
 
   const base =
@@ -24,7 +30,7 @@ const Button = ({
     const sizes: Record<string, string> = {
     sm: iconOnly ? "p-1.5" : "px-3 py-1.5 text-sm gap-1.5",
     md: iconOnly ? "p-2" : "px-4 py-2 text-sm gap-2",
-    lg: iconOnly ? "p-3" : "px-6 py-3 text-base gap-2",
+    lg: iconOnly ? "p-3" : "px-6 py-[9px] text-base gap-2",
   };
 
   const variants: Record<string, string> = {
@@ -34,16 +40,21 @@ const Button = ({
     ghost:"bg-transparent text-[#4f46e5] hover:bg-[#eef2ff] active:bg-[#e0e7ff]",
     danger:"bg-[#ef4444] text-white hover:bg-[#dc2626] active:bg-[#b91c1c] shadow-sm",
   };
-
-  const disabledClass = disabled ? "opacity-40 cursor-not-allowed pointer-events-none" : "cursor-pointer";
+const isDisabled = disabled || isLoading;
+  const disabledClass = isDisabled ? "opacity-40 cursor-not-allowed pointer-events-none" : "cursor-pointer";
  
   return (
     <button
-      className={`${base} ${sizes[size]} ${variants[variant]} ${disabledClass}`}
-      disabled={disabled}
+      className={`${base} ${sizes[size]} ${variants[variant]} ${disabledClass} ${className}`}
+      disabled={isDisabled}
       onClick={onClick}
     >
-      {children}
+      {isLoading && (
+        <Loader />
+      )}
+      <span className="flex items-center gap-x-1">
+        {children}
+      </span>
     </button>
   );
 };

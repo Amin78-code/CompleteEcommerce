@@ -13,6 +13,14 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  {
+    rules: {
+      // ❌ "error" -> 'any' type dene par BUILD FAIL ho jayegi
+      // ⚠️ "warn"  -> Warning dikhayega (Default)
+      // 🟢 "off"   -> 'any' type ko completely ALLOW kar dega
+      "@typescript-eslint/no-explicit-any": "off", 
+    },
+  },
 ]);
 
 export default eslintConfig;

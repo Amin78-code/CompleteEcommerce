@@ -4,6 +4,7 @@ import Badge from "./badge/Badge";
 import StatusBadge from "./badge/StatusBadge";
 import Heading from "./heading/Heading";
 import { Input, PasswordInput, Select } from "./input";
+import Loader from "./loader/Loader";
 
 export {
   Alert,
@@ -14,4 +15,5 @@ export {
   PasswordInput,
   Select,
   Heading,
+  Loader,
 };

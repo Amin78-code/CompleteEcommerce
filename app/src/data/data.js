@@ -1,0 +1,78 @@
+export const products = [
+  {
+    id: 1,
+    name: "Wireless Headphones Pro",
+    price: 249,
+    originalPrice: 299,
+    rating: 4.7,
+    reviews: 312,
+    badge: "sale",
+    img: "photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop&auto=format",
+  },
+  {
+    id: 2,
+    name: "Ultralight Running Shoes",
+    price: 119,
+    originalPrice: 960,
+    rating: 4.5,
+    reviews: 187,
+    badge: "new",
+    img: "photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop&auto=format",
+  },
+  {
+    id: 3,
+    name: "Ceramic Pour-Over Set",
+    price: 64,
+    originalPrice: 299,
+    rating: 4.9,
+    reviews: 93,
+    badge: "sale",
+    img: "photo-1495474472287-4d71bcdd2085?w=400&h=400&fit=crop&auto=format",
+  },
+  {
+    id: 4,
+    name: "Smart Watch Series 4",
+    price: 399,
+    originalPrice: 449,
+    rating: 4.6,
+    reviews: 540,
+    badge: "sale",
+    img: "photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop&auto=format",
+  },
+  {
+    id: 1,
+    name: "Wireless Headphones Pro",
+    price: 249,
+    originalPrice: 299,
+    rating: 4.7,
+    reviews: 312,
+    badge: "sale",
+    img: "photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop&auto=format",
+  },
+  {
+    id: 2,
+    name: "Ultralight Running Shoes",
+    price: 119,
+    originalPrice: 799,
+    rating: 4.5,
+    reviews: 187,
+    badge: "new",
+    img: "photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop&auto=format",
+  },
+];
+
+// const cartItems = [
+//   {
+//     name: "Wireless Headphones Pro",
+//     variant: "Black",
+//     price: 249,
+//     img: "photo-1505740420928-5e560c06d30e?w=80&h=80&fit=crop&auto=format",
+//   },
+//   {
+//     name: "Ultralight Running Shoes",
+//     variant: "Size 10 / White",
+//     price: 119,
+//     img: "photo-1542291026-7eec264c27ff?w=80&h=80&fit=crop&auto=format",
+//   },
+// 
+// ];
